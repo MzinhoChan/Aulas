@@ -3,7 +3,7 @@
 # controle de erros).
 
 nota = float(input("Digite a nota: "))
-while nota < 0 or nota > 10:
-    print("Nota inválida!")
 
-          
+while (nota < 0 or nota > 10) and nota != None:
+    print("Nota inválida!")
+    nota = float(input("Digite a nota: "))

@@ -1,12 +1,9 @@
 # Construa um programa que exiba a sequência de
 # Fibonacci de zero até dois mil.
 
-num_um = 0
-num_dois = 1
+a = 0
+b = 1
 
-while num_dois <= 2000:
-    print(num_dois)
-
-proximo = num_um + num_dois
-num_um = num_dois
-num_dois = proximo
+while a < 2000:
+    print(a)
+    a,b = b,a+b
