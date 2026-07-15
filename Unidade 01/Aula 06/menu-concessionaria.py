@@ -4,15 +4,15 @@
 # Resto do Programa
 
 def exbir_menu_infantil():
-    print("Relampago Marquinhos")
-    print("Hotwheels")
-    print("Patrulha Canina")
-    print("Thomas e seus Amigos")
+    menu_infantil = ["Relampago Marquinhos", "Hotwheels", "Patrulha Canina", "Thomas e seus Amigos"]
+    for index, intem in enumerate(menu_infantil):
+        print(f"{index+1},{intem}")
+        
 
 def exibir_menu_normal():
-    print("Toyota -> À partir de R$ 180.000")
-    print("Mercedes -> À partir de R$ 300.000")
-    print("Fiat -> À parit de R$ 70.000")
+    menu_normal = ["Toyota -> À partir de R$ 180.000", "Mercedes -> À partir de R$ 300.000", "Fiat -> À parit de R$ 70.000"]
+    for intem in menu_normal:
+        print(intem)
 
 def checar_idade(idade):
     if idade < 18:
