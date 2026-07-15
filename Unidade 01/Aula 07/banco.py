@@ -61,12 +61,20 @@ def menu():
             print("Obrigado por usar o nosso sistema.")
             break
         
-    
-usuario_digital = input("Insira o seu cartão.")
-if usuario_digital == usuario:
-            senha_digitada = input("Digite sua senha\n")
-            if senha_digitada == senha:
-                  menu()
-else:
-            print("Conta inválida. Verifique se o cartão foi inserido corretamente e se a conta é valida.")
-            
+# Enquanto o usuario não digitar o usuario correta, pedimos para digitar novamente.
+while True: 
+    usuario_digital = input("Insira o seu cartão.")
+    if usuario_digital == usuario:
+        # Enquanto o usuario não digitar a senha correta, pedimos para digitar novamente.
+        while True:
+             senha_digitada = input("Digite sua senha\n")
+             if senha_digitada == senha:
+                    menu()
+                    break
+             else:
+               print("Senha incorreta")
+        break
+   
+    else:
+        print("Conta inválida. Verifique se o cartão foi inserido corretamente e se a conta é valida.")
+                
