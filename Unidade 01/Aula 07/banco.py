@@ -2,10 +2,9 @@ import os
 # Operações básicas: Saque, Saldo, Deposito
 # Operações avançadas: Login, Impressão de Recibo, Suporte, Cofrinho
 
-saldo_inicial = 0
-
 usuario = "Mauricio"
 senha = "1234"
+
 
 def limpar():
     os.system("cls")
