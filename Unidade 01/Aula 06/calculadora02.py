@@ -8,27 +8,26 @@ def subtracao(a, b):
 
 def divisao(a, b):
     if b == 0:
-        return "Erro: Divisão por zero não é permitida!"
-    return a / b
+        return a / b
 
 def multiplicacao(a, b):
     return a * b
 
 def raiz(a):
     if a < 0:
-        return "Erro: Não existe raiz real de número negativo!"
-    return a ** 0.5
+        return a ** 0.5
 
 
 while True:
-    c = input("\nEscolha uma operação (+, -, *, /, v) ou 'sair' para fechar: ")
+    try:
+        c = input("\nEscolha uma operação (+, -, *, /, v) ou 'sair' para fechar: ")
 
-    if c.lower() == "sair":
-        print("Calculadora encerrada.")
-        break
+        if c.lower() == "sair":
+            print("Calculadora encerrada.")
+            break
 
-    if c in ["+", "-", "*", "/", "v"]:
-        a = int(input("Digite o valor do primeiro número: "))
+        if c in ["+", "-", "*", "/", "v"]:
+            a = int(input("Digite o valor do primeiro número: "))
         
         if c != "v":
             b = int(input("Digite o valor do segundo número: "))
@@ -43,5 +42,11 @@ while True:
             print(f"Resultado: {divisao(a, b)}")
         elif c == "v":
             print(f"Resultado: {raiz(a)}")
-    else:
-        print("Operação inválida! Tente novamente.")
+        else:
+            print("Operação inválida! Tente novamente.")
+    except(ZeroDivisionError):
+        print("Não pode dividir por Zero, tente outro número por favor.")
+    except(ValueError):
+        print("Ultilize apenas números.")
+    except (Exception) as erro:
+        print("Ocorreu um erro: ", erro)
