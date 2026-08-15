@@ -1,0 +1,70 @@
+h1 {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-decoration: underline;
+    color:green;
+    text-shadow: 3px 3px 0px #000;
+    padding: 2%;
+    border-radius: 2rem;
+    width: 50%;
+    margin: 2rem auto;
+    text-align: center;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background-image: url(https://wallpapercat.com/w/full/3/3/e/28-3840x2160-desktop-4k-grand-theft-auto-san-andreas-wallpaper.jpg);
+    background-size: cover;
+}
+
+.verde {
+    color: orange;
+    text-shadow: 3px 3px 0px #000;
+    font-size: 25px;
+}
+
+.preto {
+    color: green;
+    font-size: 25px;
+    text-shadow: 3px 3px 0px #000;
+    text-align: center;
+}
+
+h2 {
+    color: purple;
+    text-decoration: underline;
+    font-size: 40px;
+    padding: 2%;
+    border-radius: 2rem;
+    width: 50%;
+    margin: 2rem auto;
+    text-align: center;
+}
+
+.green {
+    color:green;
+    font-size: 25px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.purple {
+    color: purple;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.yellow {
+    color: yellow;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.aqua {
+    color: aqua;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: bold;
+}

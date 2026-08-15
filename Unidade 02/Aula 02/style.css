@@ -1,0 +1,55 @@
+h1 {
+    color:rgb(0, 170, 255);
+    background-color: rgb(0, 0, 0);
+    padding: 2%;
+    border-radius: 2rem;
+    width: 50%;
+    margin: 2rem auto;
+    text-align: center;
+}
+
+img {
+    border-radius: 55rem;
+    padding: 2%;
+    margin: 2% auto;
+    display: flex;
+    
+}
+    
+.grande {
+    font-size: 38px;
+}
+
+h2 {
+    color: aqua;
+    background-color: black;
+    padding: 2%;
+    border-radius: 2%;
+    width: 50%;
+    margin: 2rem auto;
+    text-align: center;
+}
+
+.maior {
+    font-size: 20px;
+}
+
+.pequeno {
+    font-size: 15px;
+}
+
+h3 {
+    color: aqua;
+    background-color: black;
+    padding: 2%;
+    border-radius: 2%;
+    width: 50%;
+    margin: 2rem auto;
+    text-align: center;
+}
+
+.vermelho {
+    color: red;
+    background: black;
+}
+
