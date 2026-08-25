@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #0c0d1b;
+}
+
+.banner {
+    width: 100%;
+}
+
+svg {
+    color: white;
+    width: 44px;
+}
+
+.burguer {
+    background-color: white;
+    width: 32px;
+    height: 10px;
+    margin-bottom: 6px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 52px 52px;
+}
+
+.container {
+    width: 60%;
+    margin: 0 auto;
+    transform: translateY(-75);
+}
+
+.container img {
+    width: 100%;
+}
+
+.grid {
+    background-color: blue;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    padding: 18px;
+}
+
+.chegando {
+    color: white;
+    
+}
+
+@keyframes nome {
+    0% {
+        background-color: #fec3d4;
+    }
+    50% {
+        background-color: #fec3d4;
+        box-shadow: 0px 0px 120px 0px ;
+    }
+} 
+    
+button {
+    animation: nome 5s ease-in-out infinite;
+    border: 12px;
+    padding: 18px;
+    border-radius: 12px;
+}
+
+button:hover {
+    background-color: #ffe9f1;
+    box-shadow:0px 0px 120px 0px #fec3d4ba;
+}
+
+
+
+
+
+

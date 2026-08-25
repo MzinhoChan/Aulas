@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    }
+
+.Youtube {
+    width: 75px;
+}
+
+h2,
+p,
+input {
+    margin: 16px;
+}
+
+input {
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid rgba(0,0,0);
+    background-color: #f9f9f9;
+}
+
+.vg{
+    background-color: green;
+    border: 12px;
+    color: white;
+    padding: 18px;
+    border-radius: 10px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f2f2f2;
+}
+
+form {
+    background-color: white;
+    padding: 48px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 10px;
+}
