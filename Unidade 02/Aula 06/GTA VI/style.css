@@ -74,6 +74,12 @@ button:hover {
     box-shadow:0px 0px 120px 0px #fec3d4ba;
 }
 
+.ps {
+    display: flex;
+    justify-items: center;
+    width: 100px;
+}
+
 
 
 
