@@ -22,7 +22,7 @@ main {
 
 .cardContainer {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 1rem;
     width: 60%;
     margin: 2rem auto;

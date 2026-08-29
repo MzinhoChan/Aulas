@@ -1,0 +1,54 @@
+:root {
+    --dominante: #3d2314;
+    --destaque: #c85a32;
+    --secundario: #f7f3e9;
+}
+
+body {
+    background-color: var(--dominante);
+}
+
+.cardContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    width: 60%;
+    margin: 2rem auto;
+}
+
+.card {
+    background-color: var(--destaque) ;
+    width: 100%;
+    height: 395px;
+    border-radius: 2rem;
+    box-shadow: 7px 8px 28px -2px black;
+    transition: all 0.3s ease-in-out
+}
+
+.imagem {
+    height: 100px;
+    width: 100px;
+}
+
+.cafezin {
+    display: flex;
+    gap: 20px;
+}
+
+.cafe {
+    border-radius: 2rem;
+    height: 500px;
+    width: 500px;
+    display: flex;
+    align-items: center;
+}
+
+.cafe1 {
+    border-radius: 2rem;
+    background-color: var(--destaque);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
