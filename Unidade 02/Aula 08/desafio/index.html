@@ -1,87 +1,318 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Desafio</title>
-    <link rel="stylesheet" href="style.css"> 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">  
+
+    <meta name="description"
+        content="Entre Linhas — Café e Livros. Um espaço aconchegante para apreciar cafés, livros e bons momentos.">
+
+    <title>Entre Linhas | Café & Livros</title>
+
+    <!-- Bootstrap -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" 
-        integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" 
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 <body>
+
+    <!-- ================= HEADER ================= -->
+
     <header>
-        <nav class="navbar bg-body-tertiary">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#">
-                <img src="entre linhas.png" alt="Logo" width="50" height="50" class="d-inline-block align-text-top">
-                Entre Linhas
-              </a>
+        <nav class="navbar">
+            <div class="nav-container">
+
+                <a href="#" class="navbar-brand">
+                    <img
+                        src="entre linhas.png"
+                        alt="Logo Entre Linhas">
+                    <span>Entre Linhas</span>
+                </a>
+
+                <form class="search" role="search" id="searchForm">
+                    <input
+                        id="searchInput"
+                        type="search"
+                        placeholder="Pesquisar..."
+                        aria-label="Pesquisar no site">
+
+                    <button type="submit" aria-label="Pesquisar">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </form>
+
             </div>
-          </nav>
+        </nav>
     </header>
-    <main>
-        <div>
-            <div class="cafezin"><img class="cafe" src="café.png" alt="">
-            <p class="cafe1">Entre o aroma intenso do café recém-passado e o silêncio confortável das páginas abertas, 
-                a Entre Linhas convida você a desacelerar. Cada xícara chega acompanhada de uma experiência: o calor suave da bebida, 
-                a textura delicada da espuma e aquele perfume envolvente de grãos torrados que preenche o ambiente.
 
-                Em meio às estantes de livros, à madeira e à luz acolhedora, o café se transforma em um pequeno ritual. 
-                É o lugar para começar o dia com calma, mergulhar em uma boa história, 
-                encontrar inspiração ou simplesmente apreciar alguns minutos longe da pressa.
-                
-                Na Entre Linhas, café e literatura se encontram para criar momentos que permanecem — sabores que despertam
-                 os sentidos e histórias que continuam mesmo depois que a última página é virada.
-                
-            </p></div>
-            <div class="cafezin">
-                <p class="cafe1">Um lugar para ler, respirar e se perder nas páginas
 
-                    Na Entre Linhas, a leitura encontra o cenário perfeito para acontecer sem pressa. 
-                    Um espaço tranquilo e acolhedor, cercado por estantes de livros, madeira natural e uma iluminação suave 
-                    que convida a permanecer. Aqui, cada canto foi pensado para proporcionar conforto e criar aquela sensação 
-                    gostosa de estar longe do barulho do mundo.
-                    
-                    Sente-se, escolha um livro e deixe o tempo passar. 
-                    Enquanto o aroma do café recém-preparado envolve o ambiente, as páginas ganham outro ritmo — mais lento, 
-                    mais íntimo, mais seu. Seja para descobrir uma nova história, estudar, escrever ou simplesmente aproveitar 
-                    alguns minutos de silêncio, a Entre Linhas oferece um refúgio onde livros, café e tranquilidade se encontram.
-                    
+    <!-- ================= CONTEÚDO ================= -->
+
+    <main id="conteudo">
+
+        <!-- INTRODUÇÃO -->
+
+        <section class="introducao">
+
+            <img
+                class="logo-principal"
+                src="entre linhas.png"
+                alt="Logo da Entre Linhas"
+                loading="eager">
+
+            <div class="introducao-texto">
+
+                <h1>
+                    Entre Linhas — onde histórias ganham sabor!
+                </h1>
+
+                <p>
+                    A Entre Linhas é um espaço criado para quem aprecia a beleza
+                    das pequenas pausas: o aroma de um café recém-passado, o som
+                    delicado das páginas sendo viradas e a tranquilidade de um
+                    ambiente feito para acolher.
+                </p>
+
+                <p>
+                    Com uma atmosfera elegante, confortável e intimista, o local
+                    reúne o prazer da leitura com a experiência de uma boa
+                    cafeteria.
+                </p>
+
+                <p>
+                    Por aqui, você encontra livros de diferentes gêneros e
+                    autores, cantinhos aconchegantes para ler, mesas para estudar
+                    ou escrever e uma seleção de cafés, bebidas quentes e
+                    acompanhamentos artesanais.
+                </p>
+
+                <p>
+                    Na estante, uma nova história espera por você. No balcão,
+                    uma xícara fumegante convida a ficar. Entre uma página e
+                    outra, talvez você encontre exatamente aquilo que não sabia
+                    que estava procurando.
+                </p>
+
+                <p class="destaque">
+                    Entre Linhas: um lugar para descobrir livros,
+                    saborear momentos e deixar o tempo passar.
+                </p>
+
+            </div>
+        </section>
+
+
+        <!-- CAFÉ -->
+
+        <section class="secao" id="cafe">
+
+            <img
+                src="café.png"
+                alt="Café servido na Entre Linhas"
+                loading="lazy">
+
+            <div class="texto">
+
+                <h2>Um café para acompanhar sua história.</h2>
+
+                <p>
+                    Entre o aroma intenso do café recém-passado e o silêncio
+                    confortável das páginas abertas, a Entre Linhas convida você
+                    a desacelerar.
+                </p>
+
+                <p>
+                    Cada xícara chega acompanhada de uma experiência: o calor
+                    suave da bebida, a textura delicada da espuma e aquele
+                    perfume envolvente de grãos torrados que preenche o ambiente.
+                </p>
+
+                <p>
+                    Em meio às estantes de livros, à madeira e à luz acolhedora,
+                    o café se transforma em um pequeno ritual.
+                </p>
+
+                <p>
+                    É o lugar para começar o dia com calma, mergulhar em uma boa
+                    história, encontrar inspiração ou simplesmente apreciar
+                    alguns minutos longe da pressa.
+                </p>
+
+                <p>
+                    Na Entre Linhas, café e literatura se encontram para criar
+                    momentos que permanecem.
+                </p>
+
+            </div>
+        </section>
+
+
+        <!-- LEITURA -->
+
+        <section class="secao invertida" id="leitura">
+
+            <div class="texto">
+
+                <h2>
+                    Um lugar para ler, respirar e se perder nas páginas.
+                </h2>
+
+                <p>
+                    Na Entre Linhas, a leitura encontra o cenário perfeito para
+                    acontecer sem pressa.
+                </p>
+
+                <p>
+                    Um espaço tranquilo e acolhedor, cercado por estantes de
+                    livros, madeira natural e uma iluminação suave que convida
+                    a permanecer.
+                </p>
+
+                <p>
+                    Sente-se, escolha um livro e deixe o tempo passar. Enquanto
+                    o aroma do café recém-preparado envolve o ambiente, as páginas
+                    ganham outro ritmo — mais lento, mais íntimo, mais seu.
+                </p>
+
+                <p>
+                    Seja para descobrir uma nova história, estudar, escrever ou
+                    simplesmente aproveitar alguns minutos de silêncio, a
+                    Entre Linhas oferece um refúgio onde livros, café e
+                    tranquilidade se encontram.
+                </p>
+
+                <p class="destaque">
                     Porque algumas histórias merecem ser lidas devagar.
-                    </p>
-                <img class="cafe" src="literatura.png" alt="">
+                </p>
+
             </div>
-            <div class="cafezin"><img class="cafe" src="livros.png" alt="">
-                <p class="cafe1">
-                    Na Entre Linhas, cada livro é uma porta entreaberta para outros mundos, outras vidas e outras formas de enxergar o cotidiano. 
-                    Em nossas estantes, as histórias repousam lado a lado, esperando por mãos curiosas e olhos dispostos a se perder — e, quem sabe, 
-                    se encontrar — entre suas páginas.
-                    
-                    Reunimos obras de diferentes épocas, estilos e vozes, porque acreditamos que a literatura não possui apenas um caminho. 
-                    Há romances que aquecem como uma xícara de café recém-passado, poesias que chegam silenciosas e permanecem por muito tempo, 
-                    contos que despertam memórias e histórias que nos fazem olhar para o mundo com novos olhos.
-                    
-                    Por trás de cada livro existe um autor, uma sensibilidade e uma maneira única de transformar pensamentos em palavras. 
-                    Alguns escrevem sobre o amor; outros, sobre a solidão, os sonhos, as pequenas alegrias e as grandes inquietações da existência. 
-                    Cada autor deixa um pouco de si em suas páginas, e cabe ao leitor descobrir esses vestígios, percorrendo frases, capítulos e personagens 
-                    como quem caminha lentamente por uma rua desconhecida.
-                    
-                    Na Entre Linhas, gostamos de pensar que escolher um livro é também escolher uma companhia. 
-                    É encontrar uma história para uma tarde tranquila, uma poesia para uma noite silenciosa ou um romance para acompanhar o aroma de um 
-                    café enquanto o mundo parece desacelerar.
-                    
-                    Aqui, os livros não são apenas objetos nas estantes. São encontros. 
-                    São conversas que atravessam décadas, lugares e distâncias. São palavras que esperam pacientemente pelo momento certo de serem lidas.
-                    
-                    Entre uma página e outra, talvez você encontre uma história. Entre uma história e outra, talvez encontre um pouco de si.
-                    </p>
+
+            <img
+                src="literatura.png"
+                alt="Espaço de leitura da Entre Linhas"
+                loading="lazy">
+
+        </section>
+
+
+        <!-- LIVROS -->
+
+        <section class="secao" id="livros">
+
+            <img
+                src="livros.png"
+                alt="Livros disponíveis na Entre Linhas"
+                loading="lazy">
+
+            <div class="texto">
+
+                <h2>Livros e autores.</h2>
+
+                <p>
+                    Na Entre Linhas, cada livro é uma porta entreaberta para
+                    outros mundos, outras vidas e outras formas de enxergar
+                    o cotidiano.
+                </p>
+
+                <p>
+                    Reunimos obras de diferentes épocas, estilos e vozes,
+                    porque acreditamos que a literatura não possui apenas
+                    um caminho.
+                </p>
+
+                <p>
+                    Há romances que aquecem como uma xícara de café recém-passado,
+                    poesias que chegam silenciosas e permanecem por muito tempo,
+                    contos que despertam memórias e histórias que nos fazem
+                    olhar para o mundo com novos olhos.
+                </p>
+
+                <p>
+                    Por trás de cada livro existe um autor, uma sensibilidade
+                    e uma maneira única de transformar pensamentos em palavras.
+                </p>
+
+                <p>
+                    Na Entre Linhas, gostamos de pensar que escolher um livro
+                    é também escolher uma companhia.
+                </p>
+
+                <p>
+                    Aqui, os livros não são apenas objetos nas estantes.
+                    <strong>São encontros.</strong>
+                </p>
+
+                <p>
+                    Entre uma página e outra, talvez você encontre uma história.
+                    Entre uma história e outra, talvez encontre um pouco de si.
+                </p>
+
             </div>
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="footer-container">
+
+            <div class="footer-item">
+                <i class="fa-solid fa-phone"></i>
+
+                <a href="tel:+5522987654321">
+                    (22) 98765-4321
+                </a>
+            </div>
+
+            <div class="footer-item">
+                <i class="fa-solid fa-location-dot"></i>
+
+                <a
+                    href="https://www.google.com/maps/search/?api=1&query=Pallet"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    Pallet
+                </a>
+            </div>
+
+            <div class="footer-item">
+                <i class="fa-solid fa-envelope"></i>
+
+                <a href="mailto:entrelinhas@email.com">
+                    entrelinhas@email.com
+                </a>
+            </div>
+
         </div>
-    </main>      
-    
+
+        <p class="copyright">
+            © 2026 Entre Linhas — Café & Livros
+        </p>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
     <script src="script.js"></script>
+
 </body>
 </html>
+```

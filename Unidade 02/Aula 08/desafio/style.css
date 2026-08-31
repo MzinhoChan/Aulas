@@ -1,54 +1,400 @@
+
+/* =========================================
+   VARIÁVEIS
+========================================= */
+
 :root {
-    --dominante: #3d2314;
-    --destaque: #c85a32;
-    --secundario: #f7f3e9;
+    --marrom: #3d2314;
+    --laranja: #c85a32;
+    --creme: #f7f3e9;
+    --texto: #2b1a10;
+
+    --sombra: 0 8px 25px rgba(0, 0, 0, 0.3);
+
+    --largura: 1200px;
+}
+
+
+/* =========================================
+   RESET
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
-    background-color: var(--dominante);
+    background-color: var(--marrom);
+    color: var(--texto);
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
 }
 
-.cardContainer {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 1rem;
-    width: 60%;
-    margin: 2rem auto;
-}
 
-.card {
-    background-color: var(--destaque) ;
+/* =========================================
+   NAVBAR
+========================================= */
+
+.navbar {
     width: 100%;
-    height: 395px;
-    border-radius: 2rem;
-    box-shadow: 7px 8px 28px -2px black;
-    transition: all 0.3s ease-in-out
+    padding: 12px 20px;
+
+    background-color: var(--laranja);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
 }
 
-.imagem {
-    height: 100px;
-    width: 100px;
-}
+.nav-container {
+    max-width: var(--largura);
+    margin: 0 auto;
 
-.cafezin {
-    display: flex;
-    gap: 20px;
-}
-
-.cafe {
-    border-radius: 2rem;
-    height: 500px;
-    width: 500px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
+
+    gap: 30px;
 }
 
-.cafe1 {
-    border-radius: 2rem;
-    background-color: var(--destaque);
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    color: var(--marrom);
+    font-size: 1.4rem;
+    font-weight: bold;
+
+    text-decoration: none;
+}
+
+.navbar-brand img {
+    width: 50px;
+    height: 50px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+}
+
+
+/* =========================================
+   PESQUISA
+========================================= */
+
+.search {
+    display: flex;
+    align-items: center;
+
+    max-width: 350px;
+    width: 100%;
+}
+
+.search input {
+    width: 100%;
+    height: 42px;
+
+    padding: 0 15px;
+
+    border: none;
+    border-radius: 8px 0 0 8px;
+
+    outline: none;
+}
+
+.search button {
+    width: 45px;
+    height: 42px;
+
+    border: none;
+    border-radius: 0 8px 8px 0;
+
+    background-color: var(--marrom);
+    color: var(--creme);
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.search button:hover {
+    background-color: #24150d;
+}
+
+
+/* =========================================
+   INTRODUÇÃO
+========================================= */
+
+.introducao {
+    max-width: var(--largura);
+    margin: 0 auto;
+
+    padding: 60px 40px;
+
+    display: flex;
+    align-items: center;
+    gap: 50px;
+
+    background-color: var(--creme);
+}
+
+.logo-principal {
+    width: 300px;
+    height: 300px;
+
+    object-fit: cover;
+
+    border-radius: 30px;
+
+    box-shadow: var(--sombra);
+
+    flex-shrink: 0;
+}
+
+.introducao-texto {
+    flex: 1;
+}
+
+.introducao h1 {
+    margin-bottom: 25px;
+
+    color: var(--marrom);
+
+    font-size: 2.2rem;
+    line-height: 1.2;
+}
+
+.introducao p {
+    margin-bottom: 15px;
+}
+
+
+/* =========================================
+   SEÇÕES
+========================================= */
+
+.secao {
+    max-width: var(--largura);
+
+    margin: 35px auto;
+    padding: 40px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 45px;
+
+    background-color: var(--laranja);
+
+    border-radius: 25px;
+
+    box-shadow: var(--sombra);
+}
+
+.secao.invertida {
+    flex-direction: row-reverse;
+}
+
+.secao img {
+    width: 450px;
+    height: 450px;
+
+    object-fit: cover;
+
+    border-radius: 25px;
+
+    flex-shrink: 0;
+}
+
+.texto {
+    flex: 1;
+}
+
+.texto h2 {
+    margin-bottom: 20px;
+
+    color: var(--creme);
+
+    font-size: 2rem;
+    line-height: 1.25;
+}
+
+.texto p {
+    margin-bottom: 15px;
+}
+
+.destaque {
+    font-weight: bold;
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+footer {
+    padding: 35px 20px;
+
+    background-color: var(--creme);
+
+    text-align: center;
+}
+
+.footer-container {
+    max-width: var(--largura);
+    margin: 0 auto 20px;
+
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+
+    gap: 30px;
+}
+
+.footer-item {
+    display: flex;
     align-items: center;
+    gap: 8px;
+}
+
+.footer-item i {
+    color: var(--laranja);
+}
+
+.footer-item a {
+    color: var(--marrom);
+
+    text-decoration: none;
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.footer-item a:hover {
+    color: var(--laranja);
+}
+
+.copyright {
+    margin: 0;
+
+    color: var(--marrom);
+    font-size: 0.9rem;
 }
 
 
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 900px) {
+
+    .nav-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .search {
+        max-width: 500px;
+    }
+
+    .introducao,
+    .secao,
+    .secao.invertida {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .introducao {
+        padding: 45px 25px;
+    }
+
+    .logo-principal {
+        width: 250px;
+        height: 250px;
+    }
+
+    .secao {
+        margin: 25px 15px;
+        padding: 30px 25px;
+    }
+
+    .secao img {
+        width: 100%;
+        max-width: 500px;
+        height: 350px;
+    }
+
+    .texto h2 {
+        font-size: 1.7rem;
+    }
+}
+
+
+/* =========================================
+   CELULAR
+========================================= */
+
+@media (max-width: 600px) {
+
+    body {
+        font-size: 15px;
+    }
+
+    .navbar {
+        padding: 10px 15px;
+    }
+
+    .navbar-brand {
+        font-size: 1.2rem;
+    }
+
+    .navbar-brand img {
+        width: 45px;
+        height: 45px;
+    }
+
+    .introducao {
+        padding: 35px 20px;
+    }
+
+    .logo-principal {
+        width: 200px;
+        height: 200px;
+    }
+
+    .introducao h1 {
+        font-size: 1.6rem;
+    }
+
+    .secao {
+        margin: 20px 10px;
+        padding: 25px 18px;
+
+        gap: 25px;
+
+        border-radius: 18px;
+    }
+
+    .secao img {
+        height: 280px;
+        border-radius: 18px;
+    }
+
+    .texto h2 {
+        font-size: 1.4rem;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+
+        gap: 15px;
+    }
+}
